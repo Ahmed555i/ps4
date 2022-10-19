@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ps4.css" />
+    <script src="ps4.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="Playstation_Img/logo.png" class="logo" />
+        <nav>
+          <ul id="x">
+            <li><a href="#">Game Controllers</a></li>
+            <li><a href="#">VR Accessories</a></li>
+            <li><a href="#">Media Remote</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </nav>
+        <img
+          src="Playstation_Img/menu.png"
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>PS4 V2 <br />Daulshock 4</h2>
+          <h3>Wireless Controller For Playstation 4</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$34.99</h4>
+          <button type="button">
+            Buy Now! <img src="Playstation_Img/arrow.png" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="Playstation_Img/controller.png" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="Playstation_Img/add.png" />
+            <p><small>Add to cart</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("x");
+      x.style.maxHeight = "0px";
+      function togglemenu() {
+        if (x.style.maxHeight == "0px") {
+          x.style.maxHeight = "130px";
+        } else {
+          x.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
